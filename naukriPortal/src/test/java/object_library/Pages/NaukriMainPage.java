@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import java.util.NoSuchElementException;
-
 public class NaukriMainPage extends AppBasePage{
 
     public By profileHeader= By.xpath("//img[@alt='naukri user profile img']");
