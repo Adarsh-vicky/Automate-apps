@@ -1,6 +1,11 @@
 package tests.cucumber_runners;
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import org.junit.runner.RunWith;
+
+
 @CucumberOptions(
         features = {"src/test/resources/bdd_features"},
         glue = {"object_library.bdd_steps"},
@@ -8,5 +13,5 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true
 )
 
-public class runCucumberTests {
+public class TestRunner extends AbstractTestNGCucumberTests {
 }

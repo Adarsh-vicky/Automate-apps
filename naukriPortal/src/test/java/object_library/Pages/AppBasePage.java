@@ -45,9 +45,9 @@ public class AppBasePage {
         return wait;  // Provide global WebDriverWait instance
     }
 
-    public void waitToDisplay(By element){
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(element));
-        System.out.println("Element is displayed:"+ driver.findElement(element).getText());
+    public WebElement waitToDisplay(By element){
+        return getWait().until(ExpectedConditions.visibilityOfElementLocated(element));
+        //System.out.println("Element is displayed:"+ driver.findElement(element).getText());
     }
 
     public void closeBrowser() {

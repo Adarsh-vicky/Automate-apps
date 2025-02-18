@@ -22,7 +22,8 @@ public class NaukriMainPage extends AppBasePage{
 
     public String getProfileTitle(String name) {
         By profile=By.xpath("//div[text()='" + name + "']");
-        return driver.findElement(profile).getText();
+        waitToDisplay(profile);
+        return waitToDisplay(profile).getText();
     }
     private final WebDriver driver;
 
