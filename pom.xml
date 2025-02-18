@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Parent project details -->
+    <groupId>com.example</groupId>  <!-- Change this to your desired groupId -->
+    <artifactId>Automate-apps</artifactId>  <!-- Parent project name -->
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- Define the modules (submodules) under the parent project -->
+    <modules>
+        <module>naukriPortal</module>
+        <!-- Add more modules here if needed -->
+    </modules>
+
+    <!-- Dependency management, plugins, etc. -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Define common dependencies for all modules here -->
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Add any shared build plugins here -->
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
